@@ -11,11 +11,11 @@ console.log(Promise);
 
  const a = 1;
  const b = () => console.log(2);
-/*function* gen() {
+function* gen() {
   yield 1;
   yield 2;
   yield 3;
-}*/
+}
 
 new Promise((resolve) => {
   resolve();
@@ -25,10 +25,8 @@ function Vue(){
 
 }
 // @flow
-Vue.prototype.test = function (vnode?: String, hydrating?: boolean) {}
+//Vue.prototype.test = function (vnode?: String, hydrating?: boolean) {}
 
 Object.assign({}, { a: 1 });
 
 console.log([1, 2, 3].reduce((res, cur) => res + cur));
-
-// var a = 1;
