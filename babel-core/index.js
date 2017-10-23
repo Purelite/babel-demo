@@ -5,10 +5,8 @@
  * @version $Id$
  */
 var fs = require('fs');
-
 var babel = require('babel-core');
-//var babylon = require('babylon');
-var transform = babel.transform;
+var babylon = require('babylon');
 var path = require('path');
 var options = {
   presets: ['env'],
@@ -16,31 +14,34 @@ var options = {
 }
 
 
+const result = babel.transform("test();", options);
+console.log('babel.transform',result.code)
 
-
-//babel.transform(code: string, options?: Object)
-/*var result = babel.transform("test();", options);
-console.log('babel.transform',result)*/
-
-//babel.transformFile(filename: string, options?: Object, callback: Function)
-/*babel.transformFile(path.resolve(__dirname) + "/test.js", options, function(err, result) {// { code, map, ast }
+babel.transformFile(path.resolve(__dirname) + "/test.js", options, function(err, result) {// { code, map, ast }
   console.log('babel.transformFile',result);
-});*/
-
-//babel.transformFileSync(filename: string, options?: Object)
-var result = babel.transformFileSync(path.resolve(__dirname) + "/test.js", options);
-//console.log('babel.transformFile',result);
-fs.writeFile('./ast.json', JSON.stringify(result, null, 4), function(err) {
-    if(err) {
-      console.log(err);
-    } else {
-      console.log("JSON saved to ");
-    }
 });
 
+/*const result = babel.transformFileSync(path.resolve(__dirname) + "/test.js", options);
+console.log('babel.transformFileSync',result);*/
 
-//babel.transformFromAst(ast: Object, code?: string, options?: Object)
-// const sourceCode = "const str = 'hello world'";
-// const parsedAst = babylon.parse(sourceCode, { allowReturnOutsideFunction: true });
-// const { code, map, ast } = babel.transformFromAst(parsedAst, sourceCode, options);
-// console.log(code, map, ast);
+/*const sourceCode = "const str = 'hello world'";
+const parsedAst = babylon.parse(sourceCode, { allowReturnOutsideFunction: true });
+const { code, map, ast } = babel.transformFromAst(parsedAst, sourceCode, options);
+console.log('babel.transformFromAst',code);*/
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+const outputFileSync = require("output-file-sync");
+babel.transformFile(path.resolve(__dirname) + "/trans2what.js", options, function(err, result) {
+  outputFileSync('./trans2code.js', result.code);
+});*/

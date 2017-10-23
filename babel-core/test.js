@@ -21,9 +21,6 @@ new Promise((resolve) => {
   resolve();
 });
 
-function Vue(){
-
-}
 // @flow
 //Vue.prototype.test = function (vnode?: String, hydrating?: boolean) {}
 
