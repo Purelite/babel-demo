@@ -84,9 +84,9 @@ __webpack_require__(2);
 __webpack_require__(4);
 __webpack_require__(5);
 
-//node_modules/.bin/webpack
-//node build/build.js
-//node_modules/.bin/babel-external-helpers > helpers.js
+//../node_modules/.bin/webpack
+//../node build/build.js
+//../node_modules/.bin/babel-external-helpers > helpers.js
 
 /***/ }),
 /* 2 */

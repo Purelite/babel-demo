@@ -1,0 +1,26 @@
+{
+  "presets": [
+    [
+      "env",
+      {
+        "targets": {
+          "browsers": [
+            "last 2 versions",
+            "safari >= 7"
+          ],
+          "node": "current"
+        },
+        "modules": false,
+        "debug": true,
+        "useBuiltIns": false,
+        "include": [],
+        "exclude": []
+      }
+    ]
+  ]
+  ,
+  "plugins": [
+     "transform-react-jsx",
+    //"transform-runtime"
+  ]
+}

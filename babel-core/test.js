@@ -9,8 +9,8 @@ const Promise = require('babel-runtime/core-js/promise');
 
 console.log(Promise);
 
- const a = 1;
- const b = () => console.log(2);
+const a = 1;
+const b = () => console.log(2);
 function* gen() {
   yield 1;
   yield 2;

@@ -12,14 +12,7 @@ const options = {
   presets: ['env'],
   plugins: ['transform-runtime'],
 }
-fs.readFile(path.resolve(__dirname)+ "/abs-ast.json",'utf-8',function(err,data){
+fs.readFile(path.resolve(__dirname)+ "/test-ast.json",'utf-8',function(err,data){
     const { code, map, ast } = babel.transformFromAst(JSON.parse(data),options);
-    outputFileSync('./abs-code.js', code);
-    /*fs.writeFile('./abs-code.js', JSON.stringify(code, null, 4), function(err) {
-        if(err) {
-          console.log(err);
-        } else {
-          console.log("save success");
-        }
-    });*/
+    outputFileSync('./test-transform.js', code);
 })

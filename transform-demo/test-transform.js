@@ -1,6 +1,10 @@
-'use strict';
+"use strict";
 
-var _regenerator = require('babel-runtime/regenerator');
+var _promise = require("babel-runtime/core-js/promise");
+
+var _promise2 = _interopRequireDefault(_promise);
+
+var _regenerator = require("babel-runtime/regenerator");
 
 var _regenerator2 = _interopRequireDefault(_regenerator);
 
@@ -11,14 +15,14 @@ var _marked = /*#__PURE__*/_regenerator2.default.mark(gen);
 /**
  * 
  * @authors Your Name (you@example.org)
- * @date    2017-10-08 18:30:15
+ * @date    2017-10-08 15:25:23
  * @version $Id$
  */
-var str = 'hello world';
-console.log(str);
 
-var test = function test() {
-  return console.log('test');
+var str = 'hello world';
+
+var fn = function fn() {
+  console.log('this is a test function');
 };
 
 function gen() {
@@ -38,9 +42,13 @@ function gen() {
           return 3;
 
         case 6:
-        case 'end':
+        case "end":
           return _context.stop();
       }
     }
   }, _marked, this);
 }
+
+new _promise2.default(function (resolve) {
+  resolve();
+});

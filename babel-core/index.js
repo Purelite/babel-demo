@@ -14,12 +14,12 @@ var options = {
 }
 
 
-const result = babel.transform("test();", options);
-console.log('babel.transform',result.code)
+const result = babel.transform("const test = ()=>{console.log('hello')};", options);
+console.log('babel.transform----->>>>>>>>>>>',result.code)
 
-babel.transformFile(path.resolve(__dirname) + "/test.js", options, function(err, result) {// { code, map, ast }
+/*babel.transformFile(path.resolve(__dirname) + "/test.js", options, function(err, result) {// { code, map, ast }
   console.log('babel.transformFile',result);
-});
+});*/
 
 /*const result = babel.transformFileSync(path.resolve(__dirname) + "/test.js", options);
 console.log('babel.transformFileSync',result);*/

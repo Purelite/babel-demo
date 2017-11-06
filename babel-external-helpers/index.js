@@ -12,6 +12,6 @@ require('./test2.js')
 
 
 
-//node_modules/.bin/webpack
-//node build/build.js
-//node_modules/.bin/babel-external-helpers > helpers.js
+//../node_modules/.bin/webpack
+//../node build/build.js
+//../node_modules/.bin/babel-external-helpers > helpers.js
