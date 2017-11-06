@@ -6,7 +6,7 @@
  */
 
 require('./module1');
-import 'babel-polyfill';
+//import 'babel-polyfill';
 
 const React = require('react');
 const elements = [1, 2, 3].map((item) => {
@@ -30,4 +30,4 @@ async function fn() {
 fn();
 
 
-Object.assign({}, { a: 1 });
+Object.assign({}, { val: 1 });

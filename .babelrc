@@ -1,6 +1,6 @@
 {
-  "presets": ["env","flow-vue"],
-  "plugins": ["transform-runtime"]
+ "presets": ["env","flow-vue"],
+  /*"plugins": ["transform-runtime"]*/
 }
 
 

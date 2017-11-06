@@ -7,12 +7,12 @@
 
   
 var test2 = async function test2() {
-  console.log('begin');
+  console.log('test2 begin');
   await new Promise((resolve) => {
     setTimeout(() => {
       resolve();
-    }, 1000)
+    }, 2000)
   })
-  console.log('done');
+  console.log('test2 done');
 }
 test2();

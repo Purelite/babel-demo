@@ -15,6 +15,8 @@ function* gen() {
   yield 3;
 }*/
 
-const array = [1,2,3].map((item, index) => item * 2);
+const array = [1, 2, 3].map(function (item, index) {
+  return item * 2;
+});
 
 //babel --plugins transform-es2015-arrow-functions index.js -o scriptTrans.js

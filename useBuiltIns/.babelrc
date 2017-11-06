@@ -12,7 +12,7 @@
         },
         "modules": false,
         "debug": true,
-        "useBuiltIns": false,
+        //"useBuiltIns": false,
         "include": [],
         "exclude": []
       }
@@ -20,7 +20,8 @@
   ]
   ,
   "plugins": [
-     "transform-react-jsx",
-    //"transform-runtime"
+    "transform-react-jsx",
+    //"transform-regenerator",
+    "transform-runtime"
   ]
 }

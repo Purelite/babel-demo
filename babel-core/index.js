@@ -11,6 +11,7 @@ var path = require('path');
 var options = {
   presets: ['env'],
   plugins: ['transform-runtime'],
+  //plugins: ['babel-plugin-transform-es2015-arrow-functions']
 }
 
 
@@ -18,16 +19,16 @@ const result = babel.transform("const test = ()=>{console.log('hello')};", optio
 console.log('babel.transform----->>>>>>>>>>>',result.code)
 
 /*babel.transformFile(path.resolve(__dirname) + "/test.js", options, function(err, result) {// { code, map, ast }
-  console.log('babel.transformFile',result);
+  console.log('babel.transformFile----->>>>>>>>>>>',result);
 });*/
 
 /*const result = babel.transformFileSync(path.resolve(__dirname) + "/test.js", options);
-console.log('babel.transformFileSync',result);*/
+console.log('babel.transformFileSync----->>>>>>>>>>>',result);*/
 
 /*const sourceCode = "const str = 'hello world'";
 const parsedAst = babylon.parse(sourceCode, { allowReturnOutsideFunction: true });
 const { code, map, ast } = babel.transformFromAst(parsedAst, sourceCode, options);
-console.log('babel.transformFromAst',code);*/
+console.log('babel.transformFromAst----->>>>>>>>>>>',code);*/
 
 
 

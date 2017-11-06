@@ -12,12 +12,12 @@ new Promise((resolve) => {
 })
 
 var test1 = async function test1() {
-  console.log('begin');
+  console.log('test1 begin');
   await new Promise((resolve) => {
     setTimeout(() => {
       resolve();
     }, 1000)
   })
-  console.log('done');
+  console.log('test1 done');
 }
 test1();
