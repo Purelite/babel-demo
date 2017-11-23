@@ -9,9 +9,9 @@ var babel = require('babel-core');
 var babylon = require('babylon');
 var path = require('path');
 var options = {
-  presets: ['env'],
-  plugins: ['transform-runtime'],
-  //plugins: ['babel-plugin-transform-es2015-arrow-functions']
+  //presets: ['env'],
+  //plugins: ['transform-runtime'],
+  plugins: ['babel-plugin-transform-es2015-arrow-functions']
 }
 
 

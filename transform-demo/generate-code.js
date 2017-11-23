@@ -13,6 +13,6 @@ const options = {
   plugins: ['transform-runtime'],
 }
 fs.readFile(path.resolve(__dirname)+ "/test-ast.json",'utf-8',function(err,data){
-    const { code, map, ast } = babel.transformFromAst(JSON.parse(data),options);
-    outputFileSync('./test-transform.js', code);
+    const result = babel.transformFromAst(JSON.parse(data),options);
+    outputFileSync('./test-transform.js', result.code);
 })
